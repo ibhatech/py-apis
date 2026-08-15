@@ -1,0 +1,30 @@
+# Jupyter Book configuration
+# Docs: https://jupyterbook.org/en/stable/customize/config.html
+title: "Top Python stdlib modules — demo notebooks"
+author: "Manas"
+copyright: "2026"
+logo: ""
+
+# Execute every notebook at build time so outputs appear on the site.
+# These notebooks are standard-library only, so this is fast and reproducible.
+execute:
+  execute_notebooks: force
+  timeout: 120
+
+# Only build files listed in _toc.yml (ignore stray notebooks/checkpoints).
+only_build_toc_files: true
+
+# Nicer sphinx defaults
+sphinx:
+  config:
+    html_show_copyright: false
+
+# Repository buttons in the top-right of the site.
+repository:
+  url: "https://github.com/ibhatech/py-apis"
+  branch: main
+
+html:
+  use_issues_button: false
+  use_repository_button: true
+  use_edit_page_button: false
